@@ -476,36 +476,6 @@ position: relative;
 .tab-contents.active-tab{
   display: block;
 }
-.about .about-content .personal-info {
-  flex: 0 0 68%;
-  max-width: 100%;
-  margin-top: 5px;
-  display: flex;
-}
-
-
-.about .about-content .personal-info .info-item {
-  flex: 0 0 40%;
-  max-width: 50%;
-  /* background: red; */
-}
-
-
-.about .about-content .personal-info .info-item p {
-  font-family: "Josefin Sans";
-  font-weight: 700;
-  padding: 10px 0;
-  font-size: 18px;
-  color: var(--text-black-900);
-  border-bottom: 1px solid var(--bg-black-50);
-}
-
-.about .about-content .personal-info .info-item p span {
-  font-weight: 400;
-  color: var(--text-black-700);
-  margin-left: 4px;
-  display: inline-block;
-}
 
 .about .about-content .buttons {
   margin-top: 40px;
