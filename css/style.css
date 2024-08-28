@@ -474,6 +474,7 @@ position: relative;
   font-family: "Poppins";
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .skills .container h3::after{
@@ -490,8 +491,15 @@ position: relative;
 .skills .skill-item {
   flex: 0 0 15%;
   max-width: 15%;
-  margin-bottom: 20px;
-  margin: auto;
+  margin-bottom: 20px;  
+}
+
+.skills .skill-row{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .skills .skill-item .skill-item-inner {
@@ -519,10 +527,29 @@ position: relative;
   transition: all 0.3s ease;
 }
 
+.skills .skill-item .skill-item-inner .icon-tools{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  display: block;
+  padding: 5px;
+  margin: 0 auto 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
 .skills .skill-item .skill-item-inner .icon img{
-  width: 50%;
-  height: 50%;
-  /* color: var(--skin-color); */
+  width: 100%;
+  height: 100%;
+}
+
+.skills .skill-item .skill-item-inner .icon-tools img{
+  width: 90%;
+  height: 90%;
+  /* border: 1px solid red;  */
 }
 
 .skills .skill-item .skill-item-inner .icon:hover{
@@ -533,122 +560,8 @@ position: relative;
   font-family:'League Spartan' ;
   color: var(--text-black-100);
   font-weight: 500;
+  font-size: 20px;
   /* text-transform: capitalize; */
-}
-
-
-
-
-
-
-/* --------------------------------------------------------------- */
-/* .skills .tech-stacks {
-  flex: 0 0 80%;
-  max-width: 100%;
-  margin: auto;
-  display:flex;
-  justify-content:center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap:3em;
-  padding: 10px 20px;
-  border: 1px solid black;
-} */
-
-.skills .tech-tools {
-  flex: 0 0 70%;
-  max-width: 100%;
-  margin: auto;
-  display:flex;
-  justify-content:center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap:3em;
-  padding: 10px 20px;
-}
-
-.skills .box {
-  position: relative;
-  width: 95px;
-  height: 86.6px;
-  /* background: var(--skin-color); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.5em / 0.25em;
-  transform: rotate(90deg);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-
-.text {
-  position: absolute;
-  z-index: 1000;
-  width: 100%;
-  text-align: center;
-  transform: rotate(-90deg);
-  margin-left: 10px;
-}
-
-.box .text p{
-  font-family:'League Spartan' ;
-  color: var(--text-black-100);
-  font-weight: 500;
-}
-
-.box .icons img{
-  width: 50%;
-  height: 50%;
-}
-
-
-.hex-updated{
-  position: relative;
-  width: 4em;
-  height: 6.92em;
-  background: var(--bg-black-100);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--text-black-700);
-  margin: 20px;
-  border-radius: 0.5em/0.25em;
-  transform: rotate(90deg);
-  /* border: 3px solid var(--text-black-900); */
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
-.hex-updated::before,
-.hex-updated::after {
-  content: "";
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  background: inherit;
-  border-radius: inherit;
-  border-top: 3px solid var(--text-black-900);
-  border-bottom: 3px solid var(--text-black-900);
-  /* border-right: 3px solid var(--text-black-900); */
-  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;   */
-}
-
-.hex-updated::before {
-  transform: rotate(60deg);
-}
-
-.hex-updated::after {
-  transform: rotate(-60deg);
-}
-
-.hex-updated .icons img{
-  width: 75%;
-  height: 75%;
-}
-
-.hex-updated .text p{
-  font-family:'League Spartan' ;
-  color: var(--text-black-100);
-  font-weight: 500;
 }
 
 
